@@ -1,0 +1,140 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: hsl(228, 11%, 9%);
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 1440px;
+}
+
+.rating-card-1,
+.rating-card-2 {
+    width: 350px;
+    height: 350px;
+    background-color: hsl(215, 22%, 16%);
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: hsl(0, 0%, 100%);
+    gap: 5px;
+}
+
+.rating-card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#view-2 {
+    display: none;
+}
+
+.rating-star,
+.rating-btn-value {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 15px;
+}
+
+.rating-ask {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.thank-title {
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.rating-msg,
+.thank-msg {
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 10px;
+}
+
+.thank-msg {
+    text-align: center;
+}
+
+.rating-btns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+}
+
+.rating-btn-value:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.rating-btn-value:active,
+.rating-btn-value--active {
+    background-color: hsl(217, 12%, 63%);
+}
+
+.submit-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    border: transparent;
+    outline: none;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.rating-value {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    padding: 7px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.thank-icon {
+    margin-bottom: 10px;
+}
+
+@media (max-width:375px) {
+
+    .rating-card-1,
+    .rating-card-2 {
+        width: 100%;
+    }
+
+    body {
+        padding: 25px;
+    }
+}
